@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">    
+    <script src="/static/main.js" defer></script>
+    <title>ESCAPEnet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="nav" id="navMenu">
+      <a href="#home" class="active">AI</a>
+      <!--<a href="#news">Stats</a>-->
+      <a href="javascript:void(0);" class="icon" onclick="nav_func()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <header>
+        <h2>ESCAPEnet</h2>
+        <p class="descriptionText">ESCAPEnet is a CNN AI service that categorises landscapes.
+        It is designed by a team of AI experts at ESCAPEnet Group.
+        </p>
+    </header>
+    
+
+
+    <form class="my-form" action="imageSend" method="POST" enctype="multipart/form-data">
+    <section>
+        <div id="drop-area">
+              
+              <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+              <div id="gallery"></div>
+              <p class="fruit-type"> </p>
+              <p class="manualText"><b>To use this service: Drop a picture in this area and it will identify which kind of landscape is in the picture.</b></p>
+              <progress id="progress-bar" max=100 value=0></progress>
+            </div>
+        </section>
+        <div id="knappar">
+            <label class="add-picture" for="fileElem">Upload a picture</label> 
+        </div>
+    </form>
+        
+ 
+    
+    
+</body>
+<footer>© ESCAPEnet Group.
+    <br/>Andersson/Aldenhov/Lagerstedt/Fossto</footer>
+</html>
+
+
